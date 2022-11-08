@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.inputs {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    height: 200px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.madlibs {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    height: 200px;
+    padding: 30px;
+    background-color:lightcyan;
+    text-align: center;
+}
+
+#madlib1 {
+    visibility: hidden;
+}
+
+.outputs {
+    color: blue;
+}

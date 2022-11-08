@@ -1,0 +1,30 @@
+#change-bg {
+    background-color: lightgray;
+}
+
+#font {
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#input-text {
+    background-color: beige;
+}
+
+#check-box {
+    background-color: aquamarine;
+    float:left ;
+}
+
+.container {
+    padding:5px;
+    margin: 10px;
+    width: 80%;
+}
+
+#list-to-right {
+    float: right;
+    position: relative;
+    top: -160px;
+    left: -500px;
+}

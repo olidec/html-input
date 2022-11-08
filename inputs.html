@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Inputs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>HTML Inputs</h1>
+
+    <div class="container" id="input-text">
+        <input type="text" id="text-in">
+        <button type="button" onclick="inputText()">Submit text</button>
+        <p>
+            You wrote <span id="input-to-text">_________</span> in the field above.
+        </p>
+    </div>
+
+    <div id="change-bg" class="container">
+        <h2>Change the background color of a div with a color picker.</h2>
+        <p>Please select a color by clicking on the color swatch:</p>
+        <input id="colorin" type="color">
+        <button type="button" onclick="changeColor()">Change Background</button>
+    </div>
+
+    <div id="font" class="container">
+        <h2 id="change-font">Select your favorite font</h2>
+
+        <input id="font1" type="radio" value="Arial" name="font" onclick="changeFont(this.value)">
+        Arial<br>
+        <input id="font2" type="radio" value="Courier" name="font" onclick="changeFont(this.value)">
+        Courier<br>
+        <input id="font3" type="radio" value="Times" name="font" onclick="changeFont(this.value)">
+        Times<br>
+        <input id="font4" type="radio" value="Trebuchet MS" name="font" onclick="changeFont(this.value)">
+        Trebuchet MS<br>
+        <input id="font5" type="radio" value="Brush Script MT" name="font" onclick="changeFont(this.value)">
+        Brush Script MT<br>
+    </div>
+
+    <div class="container" id="check-box">
+        <h2>Which books do you own?</h2>
+        <input type="checkbox" value="The Lord of the Rings" name="chbx">
+        The Lord of the Rings <br>
+        <input type="checkbox" value="Twilight" name="chbx">
+        Twilight <br>
+        <input type="checkbox" value="Harry Potter" name="chbx">
+        Harry Potter <br>
+        <input type="checkbox" value="The Hitchhiker's Guide to the Galaxy" name="chbx">
+        The The Hitchhiker's Guide to the Galaxy <br>
+        <input type="checkbox" value="The Fault in Our Stars" name="chbx">
+        The The Fault in Our Stars<br>
+        <button type="button" onclick="writeList()">Submit</button>
+        
+        <div id="list-to-right">
+            <h3>List of Books I own</h3>
+            <ul id="checked-list">
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
