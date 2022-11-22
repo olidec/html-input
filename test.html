@@ -1,0 +1,14 @@
+<html>
+<head></head>
+<body>
+<h2>Convert JSON string into a JavaScript object.</h2> 
+<div id="input"></div>
+<script>
+    //JSON String
+    const person = '{"name":"Oliver De Capitani", "age":41, "job":"teacher"}'; //Make a new JavaScript Object
+    const parsedPerson = JSON.parse(person);
+    //Display the results in the div
+    document.getElementById("input").innerHTML = `${parsedPerson.name} is ${parsedPerson.age} years old and is a ${parsedPerson.job}`;
+</script>
+</body>
+</html>
